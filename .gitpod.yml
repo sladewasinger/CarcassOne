@@ -1,0 +1,17 @@
+# cSpell:disable
+image:
+  file: Dockerfile
+
+vscode:
+  extensions:
+    - streetsidesoftware.code-spell-checker@1.7.18:B/ZdCj+T7LBpijGDIhNE5g==
+
+tasks:
+  - init: echo n | npm install -g @angular/cli; npm install
+    name: Initial Setup
+  - command: ng serve
+    name: Angular Server
+    openIn: bottom
+  - command: dotnet run --project gli-api
+    name: dotnet API server
+    openMode: split-right
