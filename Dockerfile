@@ -8,7 +8,7 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsof
     add-apt-repository universe && \
     apt-get update && apt-get -y -o APT::Install-Suggests="true" install dotnet-sdk-2.2 && \
     apt -y clean && \
-    npm install -g @angular\cli;
+    npm install -g @angular/cli;
 
 USER gitpod
 # Apply user-specific settings
